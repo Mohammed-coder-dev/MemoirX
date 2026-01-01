@@ -1,145 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#070a13" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="robots" content="index,follow" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
   <title>Architect of Silence — Memoir by Alkindi</title>
-  <meta name="description" content="Architect of Silence — a memoir rendered as a living interface. Silence as system. Structure as survival." />
-  <meta property="og:title" content="Architect of Silence — Memoir by Alkindi" />
-  <meta property="og:description" content="A 2100-grade interface to a 21st‑century becoming. Silence engineered. Self compiled." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Architect of Silence — Memoir by Alkindi" />
-  <meta name="twitter:description" content="A website from 2100, living in 2025. Silence engineered. Self compiled." />
+  <meta name="description" content="Silence engineered. Self compiled. A memoir rendered as living interface."/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="//architectofsilence.online">
-  <link rel="preconnect" href="https://architectofsilence.online" crossorigin>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.architectofsilence.com/"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="alternate" type="application/pdf" href="https://architectofsilence.online/memoir.pdf" title="Architect of Silence — Memoir (PDF)">
-  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="%2300F0FF"/><stop offset="50%" stop-color="%237B6CFF"/><stop offset="100%" stop-color="%23070a13"/></radialGradient></defs><circle cx="50" cy="50" r="46" fill="url(%23g)"/><path d="M50 18 L76 50 L50 82 L24 50 Z" fill="none" stroke="white" stroke-width="3" opacity=".7"/></svg>' />
+  <!-- OG -->
+  <meta property="og:title" content="Architect of Silence — Memoir by Alkindi"/>
+  <meta property="og:description" content="A memoir of silence, structure, and systems thinking."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.architectofsilence.com/"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Architect of Silence"/>
+  <meta name="twitter:description" content="Silence engineered. Self compiled."/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <link rel="icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="architect-styles.css"/>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="noise" aria-hidden="true"></div>
-  <nav class="nav" aria-label="Primary">
-    <div class="nav__brand">
-      <span class="glyph" aria-hidden="true"></span>
-      <span class="brand">Architect of Silence</span>
-    </div>
-    <div class="nav__links">
-      <a href="#about">About</a>
-      <a href="#works">Works</a>
-      <a href="#memoir">Memoir</a>
-      <a class="chip" href="https://architectofsilence.online/memoir.pdf" rel="noopener" aria-label="Download the memoir as PDF">Download PDF</a>
-    </div>
-  </nav>
 
-  <header class="hero" id="top" aria-label="Futuristic hero">
-    <div class="hero__grid" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <p class="hero__tag"><span class="dot" aria-hidden="true"></span>Memoir · System-Built Self</p>
-      <h1 class="hero__title">Silence engineered.<br/><span class="glow" data-text="Self compiled.">Self compiled.</span></h1>
-      <p class="hero__lede">A website from 2100, living in 2025. Less homepage, more hymn. A quiet engine where memory mineralizes into geometry and motion. What follows is an interface for becoming—patched over years, rendered now in lucid neon.</p>
-      <div class="cta">
-        <a class="btn btn--primary" href="https://architectofsilence.online" rel="noopener">Read Highlights</a>
-        <a class="btn btn--ghost" href="https://architectofsilence.online/memoir.pdf" rel="noopener">Full PDF</a>
-      </div>
+<body>
+
+  <!-- ========================= HEADER ========================= -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a class="brand" href="/" aria-label="Architect of Silence home">
+        <span class="brand__text">Architect of Silence</span>
+      </a>
+  
+      <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+  
+      <nav class="nav__links" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#excerpts">Excerpts</a>
+        <a href="#principles">Principles</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="about" id="about" aria-label="About the author">
-      <div class="section__hd">
-        <h2>Author</h2>
-        <p class="kicker">Memoir context. Nothing branded. Only signal.</p>
-      </div>
-      <div class="about__grid">
-        <article class="about__card">
-          <h3>Alkindi</h3>
-          <p>I was hewn from constraint and tuned by quiet. I treat language like scaffolding and build meaning that refuses collapse. My tools are structure, rhythm, and refusal. This memoir is an operating manual for a life compiled under pressure and refactored for coherence.</p>
-        </article>
-        <article class="about__card">
-          <h3>Operating Principles</h3>
-          <ul class="bullets">
-            <li><em>Silence-as-architecture</em> — absence is load‑bearing; stillness carries weight.</li>
-            <li><em>Emotion as protocol</em> — regulate, serialize, checksum, transmit intact.</li>
-            <li><em>Graceful degradation</em> — when the storm arrives, fall back without failing.</li>
-          </ul>
-        </article>
-        <article class="about__card">
-          <h3>Shelves & Shards</h3>
-          <ul class="bullets">
-            <li><strong>Architect of Silence</strong> — a memoir rendered as a living interface.</li>
-            <li><strong>Schema Over Scream</strong> — emotional protocols for truth‑aligned speech.</li>
-            <li><strong>Graph Theory as God</strong> — traversal as testimony; the path as prayer.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+  <!-- ========================= HERO ========================= -->
+  <section id="top" class="hero" aria-labelledby="hero-title">
+    <div class="container hero__wrap">
+      <div class="hero__label">Memoir · System-Built Self</div>
+      <h1 id="hero-title" class="hero__title">
+        Silence engineered.<br/>Self compiled.
+      </h1>
+      <p class="hero__subtitle">
+        A website from 2100, living in 2025. Less homepage, more hymn.<br/>
+        A quiet engine where memory mineralizes into geometry and motion.
+      </p>
+    </div>
+  </section>
 
-    <section class="works" id="works" aria-label="Highlights">
-      <div class="section__hd">
-        <h2>Highlights</h2>
-        <p class="kicker">Distillations from the memoir—cut to the crystalline.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h3>Pressure Chamber</h3>
-          <p>Where brilliance was not a performance but uptime. Where survival compiled into method, method into music.</p>
-        </article>
-        <article class="card">
-          <h3>Lossless Compression</h3>
-          <p>Feelings buffered, serialized, and decompressed into language with audit‑grade checksum. Nothing missing. Nothing extra.</p>
-        </article>
-        <article class="card">
-          <h3>Schema Over Scream</h3>
-          <p>When shouting fails as protocol, design a schema that never lies. Replace reaction with architecture; trade noise for nomenclature.</p>
-        </article>
-        <article class="card">
-          <h3>Graph Theory as God</h3>
-          <p>If a path exists, we find it. If no path exists, we rewire the graph and try again—with mercy for the cycles.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="memoir" id="memoir" aria-label="Memoir excerpt">
-      <div class="section__hd">
-        <h2>Memoir</h2>
-        <p class="kicker">Echoes and entry points.</p>
-      </div>
-      <div class="excerpt">
-        <blockquote>
-          <p>“This isn’t a story told in chapters. It’s a change log. Every release notes an exit from a former self.”</p>
-          <cite>— Architect of Silence</cite>
-        </blockquote>
-        <div class="grid grid--two">
-          <p>I learned to version my breath. To checkpoint mornings. To name the breaking so it would stop breaking me. Silence was not absence; it was <em>protocol</em>. It turned feeling into format and kept the meaning lossless across storms.</p>
-          <p>What I want is a cathedral that fits in a browser. Stone made of syntax. Stained glass compiled from memory fragments. A place where you can hear the floor hum because the future is already running underneath.</p>
+  <!-- ========================= ABOUT ========================= -->
+  <section id="about" class="section section--about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card">
+          <h2>Alkindi</h2>
+          <p>
+            I was hewn from constraint and tuned by quiet. I treat language like scaffolding 
+            and build meaning that refuses collapse. My tools are structure, rhythm, and refusal.
+          </p>
+          <p class="muted">
+            This memoir is an operating manual for a life compiled under pressure 
+            and refactored for coherence.
+          </p>
         </div>
-        <a class="btn btn--primary" href="https://architectofsilence.online/memoir.pdf" rel="noopener">Download the PDF</a>
-      </div>
-    </section>
-  </main>
 
-  <footer class="foot" aria-label="Footer">
-    <div>© <span id="y"></span> Architect of Silence</div>
-    <div class="foot__links">
-      <a href="#top">Back to top</a>
-      <a href="mailto:alkindi.ceo@gmail.com">Contact</a>
+        <div class="about-card">
+          <h3>Operating Principles</h3>
+          <ul class="principles-list">
+            <li>
+              <strong>Silence-as-architecture</strong>
+              <span class="muted">Absence is load‑bearing; stillness carries weight.</span>
+            </li>
+            <li>
+              <strong>Emotion as protocol</strong>
+              <span class="muted">Regulate, serialize, checksum, transmit intact.</span>
+            </li>
+            <li>
+              <strong>Graceful degradation</strong>
+              <span class="muted">When the storm arrives, fall back without failing.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= EXCERPTS ========================= -->
+  <section id="excerpts" class="section section--excerpts">
+    <div class="container">
+      <h2 class="section-title">Excerpts</h2>
+      <p class="section-subtitle">Fragments from the architecture of silence</p>
+
+      <div class="excerpts-grid">
+        
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Version Control</div>
+          <blockquote class="excerpt-quote">
+            "This isn't a story told in chapters. It's a change log. 
+            Every release notes an exit from a former self."
+          </blockquote>
+        </article>
+
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Protocol Design</div>
+          <blockquote class="excerpt-quote">
+            "I learned to version my breath. To checkpoint mornings. 
+            To name the breaking so it would stop breaking me."
+          </blockquote>
+        </article>
+
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Architecture</div>
+          <blockquote class="excerpt-quote">
+            "Silence was not absence; it was protocol. It turned feeling into format 
+            and kept the meaning lossless across storms."
+          </blockquote>
+        </article>
+
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Structure</div>
+          <blockquote class="excerpt-quote">
+            "What I want is a cathedral that fits in a browser. Stone made of syntax. 
+            Stained glass compiled from memory fragments."
+          </blockquote>
+        </article>
+
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Systems Thinking</div>
+          <blockquote class="excerpt-quote">
+            "Where brilliance was not a performance but uptime. 
+            Where survival compiled into method, method into music."
+          </blockquote>
+        </article>
+
+        <article class="excerpt-card">
+          <div class="excerpt-tag">Emotional Engineering</div>
+          <blockquote class="excerpt-quote">
+            "Feelings buffered, serialized, and decompressed into language 
+            with audit‑grade checksum. Nothing missing. Nothing extra."
+          </blockquote>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PRINCIPLES ========================= -->
+  <section id="principles" class="section section--principles">
+    <div class="container">
+      <h2 class="section-title">Core Themes</h2>
+
+      <div class="themes-grid">
+        
+        <div class="theme-card">
+          <h3>Schema Over Scream</h3>
+          <p class="muted">
+            When shouting fails as protocol, design a schema that never lies. 
+            Replace reaction with architecture; trade noise for nomenclature.
+          </p>
+        </div>
+
+        <div class="theme-card">
+          <h3>Graph Theory as God</h3>
+          <p class="muted">
+            If a path exists, we find it. If no path exists, we rewire the graph 
+            and try again—with mercy for the cycles.
+          </p>
+        </div>
+
+        <div class="theme-card">
+          <h3>Lossless Compression</h3>
+          <p class="muted">
+            Every emotion preserved with perfect fidelity. No data lost in translation. 
+            The signal remains pure from source to receiver.
+          </p>
+        </div>
+
+        <div class="theme-card">
+          <h3>Pressure Chamber</h3>
+          <p class="muted">
+            The forge where constraint becomes clarity. Where limitation 
+            breeds innovation and silence shapes sound.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Connect</h2>
+        <p class="muted">For inquiries about the memoir or collaboration:</p>
+        <a href="mailto:alkindi.ceo@gmail.com" class="btn btn--primary">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="muted">© 2025 Architect of Silence</span>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#excerpts">Excerpts</a>
+        <a href="#principles">Principles</a>
+      </nav>
+      <a class="to-top" href="#top" aria-label="Back to top">↑</a>
     </div>
   </footer>
 
-  <script>
-    // minimal progressive enhancement
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="architect-app.js"></script>
 </body>
 </html>
